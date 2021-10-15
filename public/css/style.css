@@ -7,15 +7,32 @@ body {
   font-family: "Noto Sans JP", sans-serif;
   margin: 0;
   padding: 0 2%;
-  background-color: #fefee2;
+  background: #FFEFBA;
+  background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);
+  background: linear-gradient(to right, #FFFFFF, #FFEFBA);
+}
+body h2 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 3vw;
+  font-weight: bold;
 }
 
 .navbar {
   min-height: 70px;
-  background-color: #fefee2;
+  background: #FFEFBA;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFFFFF, #FFEFBA);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   top: 0;
   position: sticky;
   z-index: 1;
+}
+.navbar .nav-item:hover {
+  transform: scale(1.1);
+  transition: transform, 0.1s;
 }
 .navbar-nav a {
   font-size: 1.2em;
@@ -35,6 +52,9 @@ body {
 .card img {
   object-fit: cover;
   border-radius: 20px;
+}
+.card ul {
+  margin-bottom: 6%;
 }
 .card .badges {
   background-color: aqua;
@@ -86,27 +106,34 @@ body {
   line-height: 30px;
   color: #565656;
 }
+.page-content .part {
+  transition-delay: 0.4s;
+  opacity: 0;
+  transform: translateX(50px);
+}
+.page-content .part.visible {
+  transform: translateX(0px);
+  opacity: 1;
+  transition: 1s;
+  transition-timing-function: cubic-bezier(0.14, 0.39, 0, 1.01);
+}
 .page-content #projects-section {
   margin-top: 6%;
 }
-.page-content #projects-section h2 {
-  font-family: "Oswald", sans-serif;
-  text-transform: uppercase;
-  font-size: 3vw;
+.page-content #formations {
+  margin-top: 6%;
+}
+.page-content #experiences {
+  margin-top: 6%;
 }
 .page-content #contact {
-  margin-top: 5%;
+  margin-top: 6%;
 }
 .page-content #contact p {
   font-size: 3vh;
 }
 .page-content #contact i:not(.mail) {
   font-size: 7vh;
-}
-.page-content #contact h2 {
-  font-family: "Oswald", sans-serif;
-  text-transform: uppercase;
-  font-size: 3vw;
 }
 
 @media screen and (max-width: 768px) {
@@ -122,11 +149,7 @@ body {
     margin-top: 15%;
   }
 
-  .page-content #projects-section h2 {
-    font-size: 2em;
-  }
-
-  .page-content #contact h2 {
+  .page-content h2 {
     font-size: 2em;
   }
 }
