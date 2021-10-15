@@ -109,10 +109,10 @@ body h2 {
 .page-content .part {
   transition-delay: 0.4s;
   opacity: 0;
-  transform: translateX(50px);
+  transform: translateY(50px);
 }
 .page-content .part.visible {
-  transform: translateX(0px);
+  transform: translateY(0px);
   opacity: 1;
   transition: 1s;
   transition-timing-function: cubic-bezier(0.14, 0.39, 0, 1.01);
