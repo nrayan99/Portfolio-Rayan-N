@@ -2,7 +2,7 @@
   "name": "portfolio-rayan-nahi",
   "version": "1.0.0",
   "description": "Portfolio Rayan Nahi",
-  "main": "script.js",
+  "main": "index.js",
   "scripts": {
     "sass":"sass --watch main.scss ./public/css/style.css"
   },

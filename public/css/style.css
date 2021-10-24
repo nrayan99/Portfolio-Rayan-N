@@ -7,9 +7,9 @@ body {
   font-family: "Noto Sans JP", sans-serif;
   margin: 0;
   padding: 0 2%;
-  background: #FFEFBA;
-  background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);
-  background: linear-gradient(to right, #FFFFFF, #FFEFBA);
+  background: #ffefba;
+  background: -webkit-linear-gradient(to right, #ffffff, #ffefba);
+  background: linear-gradient(to right, #ffffff, #ffefba);
 }
 body h2 {
   font-family: "Oswald", sans-serif;
@@ -20,11 +20,11 @@ body h2 {
 
 .navbar {
   min-height: 70px;
-  background: #FFEFBA;
+  background: #ffefba;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);
+  background: -webkit-linear-gradient(to right, #ffffff, #ffefba);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #FFFFFF, #FFEFBA);
+  background: linear-gradient(to right, #ffffff, #ffefba);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   top: 0;
   position: sticky;
@@ -117,16 +117,38 @@ body h2 {
   transition: 0.6s;
   transition-timing-function: cubic-bezier(0.14, 0.39, 0, 1.01);
 }
+.page-content #skills-section {
+  scroll-margin-top: 5em;
+}
+.page-content #skills-section .progress {
+  height: 30px;
+  margin-bottom: 10px;
+  font-size: 2vh;
+}
+.page-content #skills-section .global-skill {
+  margin-bottom: 10px;
+}
+.page-content #skills-section .fa-check-circle {
+  color: greenyellow;
+}
+.page-content #skills-section .fa-check-circle span {
+  color: black;
+  font-family: "Noto Sans JP", sans-serif;
+}
 .page-content #projects-section {
+  scroll-margin-top: 5em;
   margin-top: 6%;
 }
 .page-content #formations {
+  scroll-margin-top: 5em;
   margin-top: 6%;
 }
 .page-content #experiences {
+  scroll-margin-top: 5em;
   margin-top: 6%;
 }
 .page-content #contact {
+  scroll-margin-top: 5em;
   margin-top: 6%;
 }
 .page-content #contact p {
